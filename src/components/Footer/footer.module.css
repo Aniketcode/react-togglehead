@@ -1,0 +1,83 @@
+.footerContainer {
+  background-color: var(--primary-bg);
+  color: var(--white-color);
+  padding: 2rem 5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.globeBackground {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  opacity: 0.2;
+  pointer-events: none;
+  z-index: 0;
+}
+.footerGrid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 75rem;
+  margin: auto;
+}
+
+.column {
+  flex: 1;
+  min-width: 15.625rem;
+}
+
+.heading {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.text {
+  margin: 0.3rem 0;
+  font-size: 0.8rem;
+  line-height: 1.6;
+}
+
+.icons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+
+.icons img {
+  font-size: 1rem;
+  cursor: pointer;
+  color: var(--white-color);
+  transition: color 0.3s ease;
+}
+
+.icon:hover {
+  color: var(--light-blue);
+}
+
+.headOfficeItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.7rem;
+}
+
+.iconText {
+  flex: 1;
+  line-height: 1.5;
+}
+
+@media (max-width: 48rem) {
+  .footerGrid {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

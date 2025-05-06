@@ -1,0 +1,124 @@
+.heroContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #f9f9f9, #f1f1f1);
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.heroText {
+  flex: 1;
+  max-width: 60rem;
+  padding: 1.5rem 4rem;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.heroText h2 {
+  font-size: 2.5rem;
+  color: var(--light-card-bg);
+}
+
+.heroText p {
+  margin-top: 1rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  opacity: 0.6;
+}
+
+.heroButton {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  padding: 0.8rem 1.4rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 0.8rem;
+}
+
+.heroButton:hover {
+  background-color: var(--dark-blue-3);
+}
+
+.heroImage {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heroImage img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 48rem) {
+  .heroContainer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .heroText {
+    max-width: 100%;
+  }
+
+  .heroText h2 {
+    font-size: 2rem;
+  }
+
+  .heroText p {
+    font-size: 0.95rem;
+  }
+
+  .heroButton {
+    margin-top: 1rem;
+    font-size: 0.95rem;
+  }
+
+  .heroImage {
+    margin-top: 1.875rem;
+  }
+
+  .heroImage img {
+    width: 100%;
+    height: auto;
+    max-width: 18.75rem;
+  }
+}
+
+@media (min-width: 48.063rem) and (max-width: 64rem) {
+  .heroContainer {
+    padding: 2.5rem 2.5rem;
+  }
+
+  .heroText h2 {
+    font-size: 2.2rem;
+  }
+
+  .heroText p {
+    font-size: 1rem;
+  }
+
+  .heroButton {
+    font-size: 1rem;
+  }
+
+  .heroImage img {
+    max-width: 25rem;
+  }
+}
